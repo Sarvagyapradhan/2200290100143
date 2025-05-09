@@ -1,0 +1,11 @@
+fastapi>=0.104.0
+uvicorn>=0.23.0
+httpx>=0.25.0
+pydantic>=2.4.0 
+
+python main.py
+curl http://localhost:9876/
+Invoke-RestMethod -Uri "http://localhost:9876/numbers/p"
+Invoke-RestMethod -Uri "http://localhost:9876/numbers/f" | Format-List
+Invoke-RestMethod -Uri "http://localhost:9876/numbers/e" | Format-List
+Invoke-RestMethod -Uri "http://localhost:9876/numbers/r" | Format-List
